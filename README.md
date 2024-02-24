@@ -1,70 +1,109 @@
-# Getting Started with Create React App
+# MERN Chat Application with Socket.IO
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to the MERN Chat Application with Socket.IO repository! This application provides real-time chat functionality using the MERN (MongoDB, Express.js, React.js, Node.js) stack along with Socket.IO.
 
-## Available Scripts
+## Table of Contents
 
-In the project directory, you can run:
+- [1. Introduction](#1-introduction)
+- [2. Features](#2-features)
+- [3. Technologies Used](#3-technologies-used)
+- [4. Installation](#4-installation)
+- [5. Usage](#5-usage)
+- [6. Live Demo](#6-live-demo)
+- [7. Contributing](#7-contributing)
 
-### `npm start`
+## 1. Introduction
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+The MERN Chat Application with Socket.IO allows users to sign up or log in and chat with other users in real-time. Upon signing up, users are visible to all other users in their contact list, and they can initiate chats instantly.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 2. Features
 
-### `npm test`
+The key features of the MERN Chat Application with Socket.IO include:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **User Authentication**: Users can sign up or log in securely.
+- **Real-time Chat**: Users can chat with other users in real-time using Socket.IO.
+- **Contact List**: All signed-up users are visible to each other in their contact list.
+- **Message History**: Chat history is maintained for easy reference.
+- **User Profile**: Users can view and edit their profile details.
 
-### `npm run build`
+## 3. Technologies Used
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+The project is built using the following technologies:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **Frontend**:
+  - React.js: For building the user interface.
+  - HTML and CSS: For structuring and styling the application.
+- **Backend**:
+  - Node.js: For server-side logic.
+  - Express.js: As the web application framework.
+  - MongoDB: For database management.
+  - Socket.IO: For real-time communication.
+- **Authentication**:
+  - JWT (JSON Web Tokens): For user authentication.
+- **Other Dependencies**:
+  - Mongoose: For MongoDB object modeling.
+  - Axios: For making HTTP requests.
+  - React Router: For client-side routing.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 4. Installation
 
-### `npm run eject`
+To run the project locally, follow these steps:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1. Clone the repository:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+git clone https://github.com/SaranshKhandelwal977/Chat-Application.git
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+2. Navigate to the project directory:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```bash
+cd chat-application
+```
 
-## Learn More
+3. Install the dependencies for both the frontend and backend:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```bash
+npm install
+cd server
+npm install
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+4. Set up your MongoDB database and update the connection string in the backend `.env` file.
 
-### Code Splitting
+5. Start the backend server:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```bash
+npm start
+```
 
-### Analyzing the Bundle Size
+6. Start the frontend development server:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+```bash
+cd ..
+npm start
+```
 
-### Making a Progressive Web App
+7. Open your browser and go to `http://localhost:3000` to access the application.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## 5. Usage
 
-### Advanced Configuration
+1. Sign up or log in with your credentials.
+2. View your contacts in the contact list.
+3. Initiate chats with other users by clicking on their names.
+4. Send and receive messages in real-time.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## 6. Live Demo
 
-### Deployment
+Check out the live demo of the EdTech Project [here](https://chat-application-iota-ivory.vercel.app/).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## 7. Contributing
 
-### `npm run build` fails to minify
+Contributions are welcome! If you find any issues or want to add new features, feel free to submit a pull request.
+Contributions are welcome! If you find any issues or want to add new features, feel free to submit a pull request.
+1. Fork the repository.
+2. Create a new branch for your feature: `git checkout -b feature-name`.
+3. Commit your changes: `git commit -m "Add feature-name"`.
+4. Push to the branch: `git push origin feature-name`.
+5. Submit a pull request.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
