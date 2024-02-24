@@ -24,7 +24,6 @@ The key features of the MERN Chat Application with Socket.IO include:
 - **Real-time Chat**: Users can chat with other users in real-time using Socket.IO.
 - **Contact List**: All signed-up users are visible to each other in their contact list.
 - **Message History**: Chat history is maintained for easy reference.
-- **User Profile**: Users can view and edit their profile details.
 
 ## 3. Technologies Used
 
