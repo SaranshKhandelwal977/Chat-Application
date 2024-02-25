@@ -10,7 +10,7 @@ import {io} from 'socket.io-client';
 
 const Chat = () => {
     const socket = useRef();
-    const host = "http://localhost:4000"
+    const host = "https://chat-application-sttt.onrender.com"
     const {user, loading} = useSelector((state) => state.profile);
     const [allUsers, setAllUsers] = useState([]);
     const [changeChat, setChangeChat] = useState(undefined);
